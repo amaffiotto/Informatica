@@ -1,0 +1,11 @@
+C:\Mac\Home\Documents\School\Informatica\Esercizio01\Esercizio01\bin\Debug\Esercizio01.exe.config
+C:\Mac\Home\Documents\School\Informatica\Esercizio01\Esercizio01\bin\Debug\Esercizio01.exe
+C:\Mac\Home\Documents\School\Informatica\Esercizio01\Esercizio01\bin\Debug\Esercizio01.pdb
+C:\Mac\Home\Documents\School\Informatica\Esercizio01\Esercizio01\obj\Debug\Esercizio01.csproj.AssemblyReference.cache
+C:\Mac\Home\Documents\School\Informatica\Esercizio01\Esercizio01\obj\Debug\Esercizio01.Form1.resources
+C:\Mac\Home\Documents\School\Informatica\Esercizio01\Esercizio01\obj\Debug\Esercizio01.Properties.Resources.resources
+C:\Mac\Home\Documents\School\Informatica\Esercizio01\Esercizio01\obj\Debug\Esercizio01.csproj.GenerateResource.cache
+C:\Mac\Home\Documents\School\Informatica\Esercizio01\Esercizio01\obj\Debug\Esercizio01.csproj.CoreCompileInputs.cache
+C:\Mac\Home\Documents\School\Informatica\Esercizio01\Esercizio01\obj\Debug\Esercizio01.exe
+C:\Mac\Home\Documents\School\Informatica\Esercizio01\Esercizio01\obj\Debug\Esercizio01.pdb
+C:\Mac\Home\Documents\School\Informatica\Esercizio01\Esercizio01\obj\Debug\Esercizio01.exe.config
