@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.picVallauri = new System.Windows.Forms.PictureBox();
             this.btnDuplica = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnDuplica2 = new System.Windows.Forms.Button();
+            this.btnDuplica3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picVallauri)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,39 +47,41 @@
             // 
             // btnDuplica
             // 
-            this.btnDuplica.Location = new System.Drawing.Point(244, 47);
+            this.btnDuplica.Location = new System.Drawing.Point(298, 13);
             this.btnDuplica.Name = "btnDuplica";
-            this.btnDuplica.Size = new System.Drawing.Size(75, 23);
+            this.btnDuplica.Size = new System.Drawing.Size(99, 43);
             this.btnDuplica.TabIndex = 1;
             this.btnDuplica.Text = "Duplica";
             this.btnDuplica.UseVisualStyleBackColor = true;
             this.btnDuplica.Click += new System.EventHandler(this.btnDuplica_Click);
             // 
-            // button2
+            // btnDuplica2
             // 
-            this.button2.Location = new System.Drawing.Point(412, 67);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDuplica2.Location = new System.Drawing.Point(403, 12);
+            this.btnDuplica2.Name = "btnDuplica2";
+            this.btnDuplica2.Size = new System.Drawing.Size(99, 45);
+            this.btnDuplica2.TabIndex = 2;
+            this.btnDuplica2.Text = "Duplica 2";
+            this.btnDuplica2.UseVisualStyleBackColor = true;
+            this.btnDuplica2.Click += new System.EventHandler(this.btnDuplica2_Click);
             // 
-            // button3
+            // btnDuplica3
             // 
-            this.button3.Location = new System.Drawing.Point(493, 67);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDuplica3.Location = new System.Drawing.Point(508, 15);
+            this.btnDuplica3.Name = "btnDuplica3";
+            this.btnDuplica3.Size = new System.Drawing.Size(99, 41);
+            this.btnDuplica3.TabIndex = 3;
+            this.btnDuplica3.Text = "Aggiungi";
+            this.btnDuplica3.UseVisualStyleBackColor = true;
+            this.btnDuplica3.Click += new System.EventHandler(this.btnDuplica3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnDuplica3);
+            this.Controls.Add(this.btnDuplica2);
             this.Controls.Add(this.btnDuplica);
             this.Controls.Add(this.picVallauri);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -94,8 +96,8 @@
 
         private System.Windows.Forms.PictureBox picVallauri;
         private System.Windows.Forms.Button btnDuplica;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnDuplica2;
+        private System.Windows.Forms.Button btnDuplica3;
     }
 }
 
