@@ -79,8 +79,157 @@ namespace Esercizio04
 
             public override string ToString()
             {
-                return nMatr.ToString() + ";";
+                return nMatr.ToString() + ";"
+                    + cognome + ";"
+                    + nome + ";" 
+                    + dataDN.Day.ToString() + "/" 
+                    + dataDN.Month.ToString() + "/"
+                    + dataDN.Year.ToString() + ";" 
+                    + classe + ";" 
+                    + spec + ";";
             }
+        }
+
+        public studente[]  classe4a = new studente[30];
+
+        public string[] int_studente = { "N. MATRICOLA", "COGNOME", "NOME", "DATA DI NASCITA", "CLASSE", "SPECIALIZZAZIONE" };
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //=== Inserisci Studenti === 
+
+            grbStudente.Enabled = false;
+            dtpDataDiNascita.Value = DateTime.Now;
+
+            // Carico Combo Specializzazioni
+
+            cmbSpecializzazione.Items.Add("INF");
+            cmbSpecializzazione.Items.Add("MEC");
+            cmbSpecializzazione.Items.Add("ELT");
+            cmbSpecializzazione.Items.Add("LSSA");
+            cmbSpecializzazione.Items.Add("ECO");
+            cmbSpecializzazione.Items.Add("TUR");
+
+            cmbClasse.SelectedIndex = -1;
+            cmbSpecializzazione.SelectedIndex = -1;
+        }
+        private void esciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+        private void inserisciStudenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            grbStudente.Enabled = true;
+        }
+
+        private void btnInserisci_Click(object sender, EventArgs e)
+        {
+            studente stuAus = new studente();
+            int pos;
+
+            // Controllo dati input
+            if (CheckDatiStudente())
+            {
+                pos = PosizioneStudente();
+                if(pos != -1)
+                {
+                    stuAus.nMatr = Convert.ToInt32(nudMatricola.Value);
+                    stuAus.cognome = txtCognome.Text;
+                    stuAus.nome = txtNome.Text;
+                    stuAus.dataDN = dtpDataDiNascita.Value;
+                    stuAus.classe = cmbClasse.Text;
+                    stuAus.spec = cmbSpecializzazione.Text;
+
+                    classe4a[pos] = stuAus;
+
+                    MessageBox.Show("Studente inserito con successo");
+                }
+                else
+                {
+                    MessageBox.Show("La classe è completa !!!");
+                }
+            }
+        }
+
+        
+
+        // ===========================================================================
+        //                              GESTITI DA NOI
+        // ===========================================================================
+
+        public bool CheckDatiStudente()
+        {
+            bool errore = false;
+
+            if (CheckNumeroDiMatricola())
+            {
+                // Numero di matricola
+                nudMatricola.Focus();
+                MessageBox.Show("N Matricola già presente nella classe");
+                errore = true;
+            }
+            else if(txtCognome.Text == string.Empty)
+            {
+                // Cognome
+                txtCognome.Focus();
+                MessageBox.Show("Cognome non è stato inserito");
+                errore = true;
+            }
+            else if(txtNome.Text == string.Empty)
+            {
+                // Nome
+                txtNome.Focus();
+                MessageBox.Show("Nome non è stato inserito");
+                errore = true;
+            }
+            else if(cmbClasse.Text == string.Empty)
+            {
+                // Classe
+                cmbClasse.Focus();
+                MessageBox.Show("Classe non è stata selezionata");
+                errore = true;
+            }
+            else if(cmbSpecializzazione.Text == string.Empty)
+            {
+                // Specializzazione
+                cmbSpecializzazione.Focus();
+                MessageBox.Show("Specializzazione non è stata selezionata");
+                errore = true;
+            }
+
+            return !errore;
+        }
+
+        public bool CheckNumeroDiMatricola()
+        {
+            bool errore = false;
+
+            for(int i = 0; i < classe4a.Length; i++)
+            {
+                if (classe4a[i].nMatr == Convert.ToInt32(nudMatricola.Value))
+                {
+                    errore = true;
+                    break;
+                }
+            }
+
+            return errore;
+        }
+
+        public int PosizioneStudente()
+        {
+            int pos = -1;
+
+            for(int i = 0; i < classe4a.Length; i++)
+            {
+                if (classe4a[i].nMatr == 0)
+                {
+                    pos = i;
+                    break;
+                }
+            }
+
+            return pos;
         }
     }
 }
