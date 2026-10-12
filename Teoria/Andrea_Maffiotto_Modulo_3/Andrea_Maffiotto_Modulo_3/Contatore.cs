@@ -2,17 +2,26 @@ namespace Andrea_Maffiotto_Modulo_3;
 
 public class Contatore
 {
-    // Esercizio 3.1
+    /*
+     *  +----------------------------------+
+     *  |            Contatore             |
+     *  +----------------------------------+
+     *  |   - conteggio; int               |
+     *  |   + TotaleIstanza; int {static}  |
+     *  |   + Conteggio; int {get; set;}   |
+     *  +----------------------------------+
+     *  |   + ResetTotale() {static}       |
+     *  +----------------------------------+
+     */
+    
     private int conteggio;
     public static int TotaleIstanza = 0;
-
     public Contatore()
     {
         Conteggio = 0;
         TotaleIstanza++;
     }
-
-
+    
     public int Conteggio
     {
         get => conteggio;
@@ -21,7 +30,7 @@ public class Contatore
     /// <summary>
     /// Resetta il valore di totale istanza
     /// </summary>
-    public static void ResetTotaleIstanza()
+    public static void ResetTotale()
     {
         TotaleIstanza = 0;
     }
