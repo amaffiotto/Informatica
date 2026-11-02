@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaffiottoModulo6", "MaffiottoModulo6\MaffiottoModulo6.csproj", "{FC9FC01C-2DBE-402F-9EC6-86BA33347731}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC9FC01C-2DBE-402F-9EC6-86BA33347731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9FC01C-2DBE-402F-9EC6-86BA33347731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9FC01C-2DBE-402F-9EC6-86BA33347731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9FC01C-2DBE-402F-9EC6-86BA33347731}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
